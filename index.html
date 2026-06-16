@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Auréa Body | Premium Hair & Body Care</title>
+
+<meta name="description" content="Premium Hair & Body Care crafted for modern retailers.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#f8f5f0;
+--beige:#efe7dd;
+--gold:#b68b3a;
+--dark:#222;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--dark);
+}
+
+h1,h2,h3{
+font-family:'Cormorant Garamond',serif;
+font-weight:600;
+}
+
+.container{
+width:90%;
+max-width:1400px;
+margin:auto;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,.92);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.nav-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:32px;
+font-family:'Cormorant Garamond',serif;
+letter-spacing:2px;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:var(--dark);
+font-size:14px;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(
+rgba(248,245,240,.75),
+rgba(248,245,240,.75)
+),
+url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1800&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:80px;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:40px;
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+border:1px solid var(--gold);
+text-decoration:none;
+color:var(--gold);
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--gold);
+color:white;
+}
+
+.section{
+padding:120px 0;
+}
+
+.section-title{
+font-size:56px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.about p{
+line-height:1.9;
+font-size:18px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.product-card:hover{
+transform:translateY(-8px);
+}
+
+.product-card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.product-info{
+padding:25px;
+}
+
+.product-info h3{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.product-info p{
+font-size:15px;
+line-height:1.7;
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.benefit{
+background:white;
+padding:40px;
+text-align:center;
+border-radius:12px;
+}
+
+.instagram{
+background:var(--beige);
+text-align:center;
+}
+
+.instagram h2{
+margin-bottom:20px;
+}
+
+.instagram a{
+color:var(--gold);
+font-weight:600;
+text-decoration:none;
+}
+
+.wholesale{
+text-align:center;
+}
+
+.contact-form{
+max-width:700px;
+margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:18px;
+margin-bottom:20px;
+border:1px solid #ddd;
+background:white;
+}
+
+.contact-form button{
+cursor:pointer;
+}
+
+.footer{
+background:#222;
+color:white;
+padding:60px 0;
+text-align:center;
+}
+
+.footer a{
+color:white;
+text-decoration:none;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:52px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.benefits{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar">
+
+<div class="container nav-content">
+
+<div class="logo">AURÉA BODY</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#wholesale">Wholesale</a>
+<a href="#contact">Contact</a>
+<a href="https://instagram.com/aureabody_" target="_blank">Instagram</a>
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>Premium Hair & Body Care Crafted For Modern Retailers</h1>
+
+<p>
+Luxury collections designed to elevate beauty stores and retail experiences worldwide.
+</p>
+
+<a href="#products" class="btn">
+Explore Collection
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Auréa Body</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1556228578-dd6c7a7d8c5d?q=80&w=1200&auto=format&fit=crop">
+
+<div>
+
+<p>
+Auréa Body combines premium formulations, sophisticated aesthetics and luxury self-care experiences.
+Designed for retailers seeking high-quality beauty collections with international appeal.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="products">
+
+<div class="container">
+
+<h2 class="section-title">Featured Products</h2>
+
+<div class="products">
+
+<div class="product-card">
+<img src="images/shampoo.jpg">
+<div class="product-info">
+<h3>Keratin Volume Boost Shampoo</h3>
+<p>Volume • Strength • Fullness</p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/mask.jpg">
+<div class="product-info">
+<h3>Keratin Hair Mask</h3>
+<p>Repair • Shine • Strength</p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="images/oil.jpg">
+<div class="product-info">
+<h3>Rosemary Hair Oil</h3>
+<p>Nourish • Strengthen • Revitalise</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Why Retailers Choose Us</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>Premium Ingredients</h3>
+</div>
+
+<div class="benefit">
+<h3>Elegant Packaging</h3>
+</div>
+
+<div class="benefit">
+<h3>High Retail Appeal</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section instagram">
+
+<div class="container">
+
+<h2>Follow Our Journey</h2>
+
+<p>@aureabody_</p>
+
+<br>
+
+<a href="https://instagram.com/aureabody_" target="_blank">
+Follow on Instagram
+</a>
+
+</div>
+
+</section>
+
+<section class="section wholesale" id="wholesale">
+
+<div class="container">
+
+<h2 class="section-title">
+Become a Retail Partner
+</h2>
+
+<p>
+Partner with Auréa Body and offer premium beauty products your customers will love.
+</p>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<form
+class="contact-form"
+action="https://formsubmit.co/SEUEMAIL@gmail.com"
+method="POST">
+
+<input type="text" placeholder="Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<textarea rows="6" placeholder="Message"></textarea>
+
+<button class="btn">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container">
+
+<p>Auréa Body © 2026</p>
+
+<br>
+
+<a href="https://instagram.com/aureabody_">
+@aureabody_
+</a>
+
+</div>
+
+</footer>
+
+</body>
+</html>
